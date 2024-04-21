@@ -10,15 +10,15 @@ part 'userinfo_dto.g.dart';
 class UserInfoDto with _$UserInfoDto {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory UserInfoDto({
-    required int uid,
+    int? uid,
     String? email,
-    required String name,
-    required int gender,
-    required String language,
-    required bool isAdmin,
-    required bool isBot,
+    String? name,
+    int? gender,
+    String? language,
+    bool? isAdmin,
+    bool? isBot,
     int? birthday,
-    required int avatarUpdatedAt,
+    int? avatarUpdatedAt,
     String? createdBy,
   }) = _UserInfoDto;
 

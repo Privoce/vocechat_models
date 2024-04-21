@@ -8,15 +8,15 @@ part of 'userinfo_dto.dart';
 
 _$UserInfoDtoImpl _$$UserInfoDtoImplFromJson(Map<String, dynamic> json) =>
     _$UserInfoDtoImpl(
-      uid: json['uid'] as int,
+      uid: json['uid'] as int?,
       email: json['email'] as String?,
-      name: json['name'] as String,
-      gender: json['gender'] as int,
-      language: json['language'] as String,
-      isAdmin: json['is_admin'] as bool,
-      isBot: json['is_bot'] as bool,
+      name: json['name'] as String?,
+      gender: json['gender'] as int?,
+      language: json['language'] as String?,
+      isAdmin: json['is_admin'] as bool?,
+      isBot: json['is_bot'] as bool?,
       birthday: json['birthday'] as int?,
-      avatarUpdatedAt: json['avatar_updated_at'] as int,
+      avatarUpdatedAt: json['avatar_updated_at'] as int?,
       createdBy: json['created_by'] as String?,
     );
 
