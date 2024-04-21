@@ -20,15 +20,15 @@ UserInfoDto _$UserInfoDtoFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$UserInfoDto {
-  int get uid => throw _privateConstructorUsedError;
+  int? get uid => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  int get gender => throw _privateConstructorUsedError;
-  String get language => throw _privateConstructorUsedError;
-  bool get isAdmin => throw _privateConstructorUsedError;
-  bool get isBot => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError;
+  int? get gender => throw _privateConstructorUsedError;
+  String? get language => throw _privateConstructorUsedError;
+  bool? get isAdmin => throw _privateConstructorUsedError;
+  bool? get isBot => throw _privateConstructorUsedError;
   int? get birthday => throw _privateConstructorUsedError;
-  int get avatarUpdatedAt => throw _privateConstructorUsedError;
+  int? get avatarUpdatedAt => throw _privateConstructorUsedError;
   String? get createdBy => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -44,15 +44,15 @@ abstract class $UserInfoDtoCopyWith<$Res> {
       _$UserInfoDtoCopyWithImpl<$Res, UserInfoDto>;
   @useResult
   $Res call(
-      {int uid,
+      {int? uid,
       String? email,
-      String name,
-      int gender,
-      String language,
-      bool isAdmin,
-      bool isBot,
+      String? name,
+      int? gender,
+      String? language,
+      bool? isAdmin,
+      bool? isBot,
       int? birthday,
-      int avatarUpdatedAt,
+      int? avatarUpdatedAt,
       String? createdBy});
 }
 
@@ -69,54 +69,54 @@ class _$UserInfoDtoCopyWithImpl<$Res, $Val extends UserInfoDto>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uid = null,
+    Object? uid = freezed,
     Object? email = freezed,
-    Object? name = null,
-    Object? gender = null,
-    Object? language = null,
-    Object? isAdmin = null,
-    Object? isBot = null,
+    Object? name = freezed,
+    Object? gender = freezed,
+    Object? language = freezed,
+    Object? isAdmin = freezed,
+    Object? isBot = freezed,
     Object? birthday = freezed,
-    Object? avatarUpdatedAt = null,
+    Object? avatarUpdatedAt = freezed,
     Object? createdBy = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: null == uid
+      uid: freezed == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      name: null == name
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      gender: null == gender
+              as String?,
+      gender: freezed == gender
           ? _value.gender
           : gender // ignore: cast_nullable_to_non_nullable
-              as int,
-      language: null == language
+              as int?,
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as String,
-      isAdmin: null == isAdmin
+              as String?,
+      isAdmin: freezed == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
-              as bool,
-      isBot: null == isBot
+              as bool?,
+      isBot: freezed == isBot
           ? _value.isBot
           : isBot // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       birthday: freezed == birthday
           ? _value.birthday
           : birthday // ignore: cast_nullable_to_non_nullable
               as int?,
-      avatarUpdatedAt: null == avatarUpdatedAt
+      avatarUpdatedAt: freezed == avatarUpdatedAt
           ? _value.avatarUpdatedAt
           : avatarUpdatedAt // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       createdBy: freezed == createdBy
           ? _value.createdBy
           : createdBy // ignore: cast_nullable_to_non_nullable
@@ -134,15 +134,15 @@ abstract class _$$UserInfoDtoImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {int uid,
+      {int? uid,
       String? email,
-      String name,
-      int gender,
-      String language,
-      bool isAdmin,
-      bool isBot,
+      String? name,
+      int? gender,
+      String? language,
+      bool? isAdmin,
+      bool? isBot,
       int? birthday,
-      int avatarUpdatedAt,
+      int? avatarUpdatedAt,
       String? createdBy});
 }
 
@@ -157,54 +157,54 @@ class __$$UserInfoDtoImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uid = null,
+    Object? uid = freezed,
     Object? email = freezed,
-    Object? name = null,
-    Object? gender = null,
-    Object? language = null,
-    Object? isAdmin = null,
-    Object? isBot = null,
+    Object? name = freezed,
+    Object? gender = freezed,
+    Object? language = freezed,
+    Object? isAdmin = freezed,
+    Object? isBot = freezed,
     Object? birthday = freezed,
-    Object? avatarUpdatedAt = null,
+    Object? avatarUpdatedAt = freezed,
     Object? createdBy = freezed,
   }) {
     return _then(_$UserInfoDtoImpl(
-      uid: null == uid
+      uid: freezed == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      name: null == name
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      gender: null == gender
+              as String?,
+      gender: freezed == gender
           ? _value.gender
           : gender // ignore: cast_nullable_to_non_nullable
-              as int,
-      language: null == language
+              as int?,
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as String,
-      isAdmin: null == isAdmin
+              as String?,
+      isAdmin: freezed == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
-              as bool,
-      isBot: null == isBot
+              as bool?,
+      isBot: freezed == isBot
           ? _value.isBot
           : isBot // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       birthday: freezed == birthday
           ? _value.birthday
           : birthday // ignore: cast_nullable_to_non_nullable
               as int?,
-      avatarUpdatedAt: null == avatarUpdatedAt
+      avatarUpdatedAt: freezed == avatarUpdatedAt
           ? _value.avatarUpdatedAt
           : avatarUpdatedAt // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       createdBy: freezed == createdBy
           ? _value.createdBy
           : createdBy // ignore: cast_nullable_to_non_nullable
@@ -218,38 +218,38 @@ class __$$UserInfoDtoImplCopyWithImpl<$Res>
 @JsonSerializable(fieldRename: FieldRename.snake)
 class _$UserInfoDtoImpl implements _UserInfoDto {
   const _$UserInfoDtoImpl(
-      {required this.uid,
+      {this.uid,
       this.email,
-      required this.name,
-      required this.gender,
-      required this.language,
-      required this.isAdmin,
-      required this.isBot,
+      this.name,
+      this.gender,
+      this.language,
+      this.isAdmin,
+      this.isBot,
       this.birthday,
-      required this.avatarUpdatedAt,
+      this.avatarUpdatedAt,
       this.createdBy});
 
   factory _$UserInfoDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$UserInfoDtoImplFromJson(json);
 
   @override
-  final int uid;
+  final int? uid;
   @override
   final String? email;
   @override
-  final String name;
+  final String? name;
   @override
-  final int gender;
+  final int? gender;
   @override
-  final String language;
+  final String? language;
   @override
-  final bool isAdmin;
+  final bool? isAdmin;
   @override
-  final bool isBot;
+  final bool? isBot;
   @override
   final int? birthday;
   @override
-  final int avatarUpdatedAt;
+  final int? avatarUpdatedAt;
   @override
   final String? createdBy;
 
@@ -295,38 +295,38 @@ class _$UserInfoDtoImpl implements _UserInfoDto {
 
 abstract class _UserInfoDto implements UserInfoDto {
   const factory _UserInfoDto(
-      {required final int uid,
+      {final int? uid,
       final String? email,
-      required final String name,
-      required final int gender,
-      required final String language,
-      required final bool isAdmin,
-      required final bool isBot,
+      final String? name,
+      final int? gender,
+      final String? language,
+      final bool? isAdmin,
+      final bool? isBot,
       final int? birthday,
-      required final int avatarUpdatedAt,
+      final int? avatarUpdatedAt,
       final String? createdBy}) = _$UserInfoDtoImpl;
 
   factory _UserInfoDto.fromJson(Map<String, dynamic> json) =
       _$UserInfoDtoImpl.fromJson;
 
   @override
-  int get uid;
+  int? get uid;
   @override
   String? get email;
   @override
-  String get name;
+  String? get name;
   @override
-  int get gender;
+  int? get gender;
   @override
-  String get language;
+  String? get language;
   @override
-  bool get isAdmin;
+  bool? get isAdmin;
   @override
-  bool get isBot;
+  bool? get isBot;
   @override
   int? get birthday;
   @override
-  int get avatarUpdatedAt;
+  int? get avatarUpdatedAt;
   @override
   String? get createdBy;
   @override
