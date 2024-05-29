@@ -8,16 +8,16 @@ part of 'userinfo_dto.dart';
 
 _$UserInfoDtoImpl _$$UserInfoDtoImplFromJson(Map<String, dynamic> json) =>
     _$UserInfoDtoImpl(
-      uid: json['uid'] as int?,
+      uid: (json['uid'] as num?)?.toInt(),
       email: json['email'] as String?,
       name: json['name'] as String?,
-      gender: json['gender'] as int?,
+      gender: (json['gender'] as num?)?.toInt(),
       language: json['language'] as String?,
-      isAdmin: json['is_admin'] as bool?,
-      isBot: json['is_bot'] as bool?,
-      birthday: json['birthday'] as int?,
-      avatarUpdatedAt: json['avatar_updated_at'] as int?,
-      createdBy: json['created_by'] as String?,
+      isAdmin: json['isAdmin'] as bool?,
+      isBot: json['isBot'] as bool?,
+      birthday: (json['birthday'] as num?)?.toInt(),
+      avatarUpdatedAt: (json['avatarUpdatedAt'] as num?)?.toInt(),
+      createdBy: json['createdBy'] as String?,
     );
 
 Map<String, dynamic> _$$UserInfoDtoImplToJson(_$UserInfoDtoImpl instance) =>
@@ -27,9 +27,9 @@ Map<String, dynamic> _$$UserInfoDtoImplToJson(_$UserInfoDtoImpl instance) =>
       'name': instance.name,
       'gender': instance.gender,
       'language': instance.language,
-      'is_admin': instance.isAdmin,
-      'is_bot': instance.isBot,
+      'isAdmin': instance.isAdmin,
+      'isBot': instance.isBot,
       'birthday': instance.birthday,
-      'avatar_updated_at': instance.avatarUpdatedAt,
-      'created_by': instance.createdBy,
+      'avatarUpdatedAt': instance.avatarUpdatedAt,
+      'createdBy': instance.createdBy,
     };

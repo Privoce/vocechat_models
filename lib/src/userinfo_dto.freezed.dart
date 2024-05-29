@@ -214,8 +214,7 @@ class __$$UserInfoDtoImplCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$UserInfoDtoImpl implements _UserInfoDto {
   const _$UserInfoDtoImpl(
       {this.uid,
@@ -252,6 +251,11 @@ class _$UserInfoDtoImpl implements _UserInfoDto {
   final int? avatarUpdatedAt;
   @override
   final String? createdBy;
+
+  @override
+  String toString() {
+    return 'UserInfoDto(uid: $uid, email: $email, name: $name, gender: $gender, language: $language, isAdmin: $isAdmin, isBot: $isBot, birthday: $birthday, avatarUpdatedAt: $avatarUpdatedAt, createdBy: $createdBy)';
+  }
 
   @override
   bool operator ==(Object other) {

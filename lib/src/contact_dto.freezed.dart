@@ -123,8 +123,7 @@ class __$$ContactDtoImplCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$ContactDtoImpl implements _ContactDto {
   const _$ContactDtoImpl({this.targetUid, this.info});
 
@@ -135,6 +134,11 @@ class _$ContactDtoImpl implements _ContactDto {
   final int? targetUid;
   @override
   final ContactInfoDto? info;
+
+  @override
+  String toString() {
+    return 'ContactDto(targetUid: $targetUid, info: $info)';
+  }
 
   @override
   bool operator ==(Object other) {
